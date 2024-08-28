@@ -66,4 +66,16 @@ button {
   background-color: #f9f9f9;
 }
 
-/* yet to add button:hover, reset-quiz, reset-quiz:hover*/
+button:hover {
+  background-color: #0056b3;
+}
+
+#reset-quiz {
+  background-color: #dc3545;
+  margin-top: 20px;
+  display: none;
+}
+
+#reset-quiz:hover {
+  background-color: #c82333;
+}
