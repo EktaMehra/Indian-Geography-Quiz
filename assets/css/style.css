@@ -26,3 +26,44 @@ button {
   text-align: center;
   margin-bottom: 20px;
 }
+
+#quiz-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  display: none;
+}
+
+#progress-bar-container {
+  background-color: #e9ecef;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 10px;
+  width: 100%;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.question {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* yet to add button:hover, reset-quiz, reset-quiz:hover*/
