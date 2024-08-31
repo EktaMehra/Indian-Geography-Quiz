@@ -82,20 +82,10 @@ function loadQuestion() {
         )
         .join("")}
     `;
-
   document.querySelectorAll(".option").forEach((option) => {
     option.addEventListener("click", function () {
+      // Here you can handle the selection of the answer
       document.getElementById("next-question").style.display = "block";
     });
   });
 }
-
-document.getElementById("next-question").addEventListener("click", function () {
-  currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
-    loadQuestion();
-    document.getElementById("next-question").style.display = "none";
-  } else {
-    alert("Quiz Completed!");
-  }
-});
