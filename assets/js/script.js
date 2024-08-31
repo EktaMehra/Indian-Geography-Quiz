@@ -1,10 +1,21 @@
 document.getElementById("start-quiz").addEventListener("click", function () {
   document.getElementById("user-info").style.display = "none";
-  document.getElementById("quiz-container").style.display = "block";
+  document.getElementById("quiz-content").style.display = "block";
+  loadQuestion();
 });
 
 let currentQuestionIndex = 0;
 let questions = [
+  {
+    question: "1. What is the Capital of India?",
+    options: ["Delhi", "Mumbai", "Kolkata", "Chennai"],
+    answer: "Delhi",
+  },
+  {
+    question: "2. Which is the largest state in India by area?",
+    options: ["Maharashtra", "Madhya Pradesh", "Rajasthan", "Uttar Pradesh"],
+    answer: "Rajasthan",
+  },
   {
     question: "1. What is the Capital of India?",
     options: ["Delhi", "Mumbai", "Kolkata", "Chennai"],
@@ -63,14 +74,14 @@ function loadQuestion() {
   let questionContainer = document.getElementById("question-container");
 
   questionContainer.innerHTML = `
-    <p>${questionObj.question}</p>
-    ${questionObj.options
-      .map(
-        (option, index) =>
-          `<div class="option" data-option="${option}">${option}</div>`
-      )
-      .join("")}
-  `;
+      <p>${questionObj.question}</p>
+      ${questionObj.options
+        .map(
+          (option, index) =>
+            `<div class="option" data-option="${option}">${option}</div>`
+        )
+        .join("")}
+    `;
 
   document.querySelectorAll(".option").forEach((option) => {
     option.addEventListener("click", function () {
@@ -78,3 +89,13 @@ function loadQuestion() {
     });
   });
 }
+
+document.getElementById("next-question").addEventListener("click", function () {
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+    loadQuestion();
+    document.getElementById("next-question").style.display = "none";
+  } else {
+    alert("Quiz Completed!");
+  }
+});
