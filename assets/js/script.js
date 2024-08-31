@@ -49,8 +49,8 @@ let questions = [
   },
   {
     question: "7.  Which city is known as the Sillicon Valley of India?",
-    options: ["Mumbai", "Banglore", "Hyderabad", "Chennai"],
-    answer: "Banglore",
+    options: ["Mumbai", "Bangalore", "Hyderabad", "Chennai"],
+    answer: "Bangalore",
   },
   {
     question: "8. What is the name of the longest river in India?",
@@ -83,7 +83,6 @@ function loadQuestion() {
         .join("")} `;
   document.querySelectorAll(".option").forEach((option) => {
     option.addEventListener("click", function () {
-      // Here you can handle the selection of the answer
       document.getElementById("next-question").style.display = "block";
     });
   });
@@ -95,7 +94,6 @@ document.getElementById("next-question").addEventListener("click", function () {
     loadQuestion();
     document.getElementById("next-question").style.display = "none";
   } else {
-    // Handle the end of the quiz
     alert("Quiz Completed!");
   }
 });
