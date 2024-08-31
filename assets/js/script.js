@@ -61,4 +61,20 @@ let questions = [
 function loadQuestion() {
   let questionObj = questions[currentQuestionIndex];
   let questionContainer = document.getElementById("question-container");
+
+  questionContainer.innerHTML = `
+    <p>${questionObj.question}</p>
+    ${questionObj.options
+      .map(
+        (option, index) =>
+          `<div class="option" data-option="${option}">${option}</div>`
+      )
+      .join("")}
+  `;
+
+  document.querySelectorAll(".option").forEach((option) => {
+    option.addEventListener("click", function () {
+      document.getElementById("next-question").style.display = "block";
+    });
+  });
 }
