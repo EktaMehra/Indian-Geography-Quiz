@@ -64,8 +64,8 @@ let questions = [
   },
   {
     question: "10. Which Indian state has the longest coastline?",
-    options: ["Maharashtra", "Gujrat", "Tamil Nadu", "Kerala"],
-    answer: "Gujrat",
+    options: ["Maharashtra", "Gujarat", "Tamil Nadu", "Kerala"],
+    answer: "Gujarat",
   },
 ];
 
@@ -80,8 +80,7 @@ function loadQuestion() {
           (option, index) =>
             `<div class="option" data-option="${option}">${option}</div>`
         )
-        .join("")}
-    `;
+        .join("")} `;
   document.querySelectorAll(".option").forEach((option) => {
     option.addEventListener("click", function () {
       // Here you can handle the selection of the answer
@@ -89,3 +88,15 @@ function loadQuestion() {
     });
   });
 }
+
+document.getElementById("next-question").addEventListener("click", function () {
+  currentQuestionIndex++;
+  if (currentQuestionIndex < questions.length) {
+    loadQuestion();
+    document.getElementById("next-question").style.display = "none";
+  } else {
+    // Handle the end of the quiz
+    alert("Quiz Completed!");
+  }
+});
+//need to add the result function of the quiz at last
