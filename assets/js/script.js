@@ -1,6 +1,4 @@
-let currentQuestionIndex = 0;
-let questions = [];
-function loadQuestion() {
-  let questionObj = questions[currentQuestionIndex];
-  let questionContainer = document.getElementById("question-container");
-}
+document.getElementById("start-quiz").addEventListener("click", function () {
+  document.getElementById("user-info").style.display = "none";
+  document.getElementById("quiz-container").style.display = "block";
+});
