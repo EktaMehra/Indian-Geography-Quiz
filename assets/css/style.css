@@ -1,25 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
   margin: 0%;
   padding: 20%;
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
 }
 
 #user-info {
@@ -27,55 +13,59 @@ button {
   margin-bottom: 20px;
 }
 
+#username {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#start-quiz {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+#quiz-content {
+  display: none;
+}
+
 #quiz-container {
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-}
-
-#result {
-  margin-top: 20px;
-  font-size: 18px;
+  width: 400px;
   text-align: center;
-  display: none;
 }
 
-#progress-bar-container {
-  background-color: #e9ecef;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  height: 10px;
-  width: 100%;
+#question-container {
+  margin: 20px 0;
 }
 
-#progress-bar {
-  height: 100%;
-  width: 0%;
-  background-color: #007bff;
-  border-radius: 5px;
-}
-
-.question {
-  margin-bottom: 20px;
+.option {
+  display: block;
   padding: 10px;
+  margin: 5px 0;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #0056b3;
+.option:hover {
+  background-color: #007bff;
+  color: #fff;
 }
 
-#reset-quiz {
-  background-color: #dc3545;
-  margin-top: 20px;
-  display: none;
-}
-
-#reset-quiz:hover {
-  background-color: #c82333;
+#next-question {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
 }
