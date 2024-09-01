@@ -8,31 +8,32 @@ This section provides an overview of the key features of the Indian Geography Qu
 
 ### Existing Features
 
--The Indian Geography Quiz Logo and Heading
+- The Indian Geography Quiz Logo and Heading
 
 The Indian Geography Quiz logo and heading are prominently displayed at the top of the page, making it easy for users to identify the quiz and understand its focus. This enhances brand recognition and sets the tone for the quiz.
+![Logo & Heading](assets/images/heading%20and%20logo.PNG)
 
-### The Quiz Interface
+- The Quiz Interface
 
-The quiz interface is where users will interact with the quiz. It presents one multiple-choice question at a time, with four possible answers. Users can select an answer by clicking on it, which is then highlighted for confirmation. This clear and intuitive design allows users to focus on the quiz content.
+The quiz interface is where users will interact with the quiz. The users start with entering their name and pressing the start quiz button. It then presents one multiple-choice question at a time, with four possible answers. Users can select an answer by clicking on it, which is then highlighted for confirmation. This clear and intuitive design allows users to focus on the quiz content.
+![Enter name and start quiz section](assets/images/Enter%20name%20&%20start.PNG)
 
-### The Question Section
+- The Question Section
 
 The question section displays the current geography-related question, allowing users to engage with the content. An answer box is provided where users can submit their responses. Immediate feedback is given through a pop-up message indicating whether the answer was correct or incorrect.
+![Question section](assets/images/question%20section.PNG)
 
-### The Score Area
+- End of Quiz Summary
 
-The score area keeps track of the user's performance by showing the number of correct and incorrect answers. This feature helps users monitor their progress throughout the quiz and encourages them to improve their scores.
-
-### End of Quiz Summary
-
-At the end of the quiz, users are provided with a summary of their performance, including their total score and a breakdown of correct and incorrect answers. This summary allows users to review their knowledge and identify areas for improvement.
+At the end of the quiz, users are provided with a summary of their total score. This summary allows users to review their knowledge and identify areas for improvement.
+![Quiz ens and final score](assets/images/end%20section.PNG)
 
 ## Features Left to Implement
 
 ### Leaderboard
 
-A leaderboard feature will be added to allow users to compare their scores with others, fostering a sense of competition and community. This feature will enhance user engagement and motivate repeat plays.
+- A leaderboard feature will be added to allow users to compare their scores with others, fostering a sense of competition and community. This feature will enhance user engagement and motivate repeat plays.
+- A more detailed code that will prevent repetion of answering the questions, in case one is answered incorrectly.
 
 ### Timed Quiz Mode
 
