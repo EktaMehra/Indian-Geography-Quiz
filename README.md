@@ -72,14 +72,13 @@ The Indian Geography Quiz was deployed using GitHub Pages. The steps for deploym
 - From the Source section drop-down menu, select the master branch.
 - Once the master branch has been selected, the page will automatically refresh, and a ribbon will display indicating the successful deployment.
 
-The live link to the project can be found here: Indian Geography Quiz.
+The live link to the project can be found here: [Indian Geography Quiz](https://ektamehra.github.io/Indian-Geography-Quiz/).
 
 ## Credits
 
 ### Content
 
-The quiz questions and answers were crafted using information from reliable sources on Indian geography.
-The text and content for the quiz were developed with the help of ChatGPT.
+The quiz questions and answers were crafted using information from [Google](https://www.google.com/) on Indian geography.
 
 ### Media
 

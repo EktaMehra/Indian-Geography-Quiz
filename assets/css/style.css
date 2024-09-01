@@ -3,9 +3,10 @@ body {
   background-color: #f4f4f4;
   display: flex;
   justify-content: center;
-  height: 70vh;
-  margin: 0%;
-  padding: 100px;
+  align-items: center; /* Added for better centering on smaller screens */
+  height: 100vh;
+  margin: 0;
+  padding: 50px;
   background-image: url("../images/pexels-mayur-rawte-1583244.jpg");
   background-size: cover;
   background-position: center;
@@ -23,7 +24,8 @@ body {
 
 #username {
   padding: 10px;
-  width: 80%;
+  width: 100%; /* Adjusted width to be more responsive */
+  max-width: 300px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
@@ -35,6 +37,7 @@ body {
   border-radius: 5px;
   background-color: #007bff;
   color: #fff;
+  cursor: pointer;
 }
 
 #quiz-content {
@@ -46,9 +49,9 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 100%; /* Adjusted width to be more responsive */
+  max-width: 400px;
   text-align: center;
-  padding-bottom: 20%;
 }
 
 #question-container {
@@ -76,5 +79,138 @@ body {
   border-radius: 5px;
   background-color: #28a745;
   color: #fff;
-  margin: 30px 230px 0px 40px;
+  margin-top: 20px; /* Adjusted margin to be more responsive */
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    height: auto;
+  }
+
+  #quiz-container {
+    width: 90%; /* Adjusted width for smaller screens */
+    padding: 15px;
+  }
+
+  #next-question {
+    width: 100%; /* Make the button full-width on smaller screens */
+    margin: 20px 0 0; /* Centered margin for smaller screens */
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Added for better centering on smaller screens */
+  height: 100vh;
+  margin: 0;
+  padding: 50px;
+  background-image: url("../images/pexels-mayur-rawte-1583244.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
+#user-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#username {
+  padding: 10px;
+  width: 100%; /* Adjusted width to be more responsive */
+  max-width: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#start-quiz {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+#quiz-content {
+  display: none;
+}
+
+#quiz-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Adjusted width to be more responsive */
+  max-width: 400px;
+  text-align: center;
+}
+
+#question-container {
+  margin: 20px 0;
+}
+
+.option {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#next-question {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  margin-top: 20px; /* Adjusted margin to be more responsive */
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    height: 700px;
+  }
+
+  #quiz-container {
+    width: 90%; /* Adjusted width for smaller screens */
+    padding: 15px;
+  }
+
+  #next-question {
+    width: 100%; /* Make the button full-width on smaller screens */
+    margin: 20px 0 0; /* Centered margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    height: 920px;
+  }
+
+  #username {
+    width: 100%; /* Full width for input on smaller screens */
+  }
+
+  #quiz-container {
+    padding: 10px;
+  }
 }
