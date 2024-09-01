@@ -63,31 +63,43 @@ let questions = [
 function loadQuestion() {
   let questionObj = questions[currentQuestionIndex];
   let questionContainer = document.getElementById("question-container");
-  let feedbackDiv = document.getElementById("feecback");
+  let feedbackDiv = document.getElementById("feedback");
   let feedbackText = document.getElementById("feedback-text");
-  let correctAnswertext = document.getElementById("correct-answer");
+  let correctAnswerText = document.getElementById("correct-answer");
+
+  // Ensure feedbackDiv exists before trying to modify its style
+  if (feedbackDiv) {
+    feedbackDiv.style.display = "none";
+  }
+  feedbackText.textContent = "";
+  correctAnswerText.textContent = "";
 
   questionContainer.innerHTML = `
-      <p>${questionObj.question}</p>
-      ${questionObj.options
-        .map(
-          (option, index) =>
-            `<div class="option" data-option="${option}">${option}</div>`
-        )
-        .join("")} `;
+    <p>${questionObj.question}</p>
+    ${questionObj.options
+      .map(
+        (option, index) =>
+          `<div class="option" data-option="${option}">${option}</div>`
+      )
+      .join("")}
+  `;
+
   document.querySelectorAll(".option").forEach((option) => {
     option.addEventListener("click", function () {
       let selectedOption = this.getAttribute("data-option");
       if (selectedOption === questionObj.answer) {
         score++;
-        feedbackText.textContent = "Amazing, thats correct!";
+        feedbackText.textContent = "Correct!";
         feedbackText.style.color = "green";
       } else {
-        feedbackText.textContent = "Ayioo, it is incorrect!";
+        feedbackText.textContent = "Incorrect!";
         feedbackText.style.color = "red";
-        correctAnswertext.textContent = `The correct answer is : ${questionObj.answer}`;
+        correctAnswerText.textContent = `The correct answer was: ${questionObj.answer}`;
       }
-      feedbackDiv.style.display = "block";
+      // Show feedback after selection
+      if (feedbackDiv) {
+        feedbackDiv.style.display = "block";
+      }
       document.getElementById("next-question").style.display = "block";
     });
   });
@@ -97,8 +109,8 @@ document.getElementById("next-question").addEventListener("click", function () {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
     loadQuestion();
-    document.getElementById("next-question").style.display = "none";
+    this.style.display = "none";
   } else {
-    alert("Quiz Completed!");
+    alert("Quiz Completed! Your score is " + score + "/" + questions.length);
   }
 });
