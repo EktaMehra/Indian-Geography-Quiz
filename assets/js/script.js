@@ -72,6 +72,13 @@ let questions = [
 function loadQuestion() {
   let questionObj = questions[currentQuestionIndex];
   let questionContainer = document.getElementById("question-container");
+  let feedbackDiv = document.getElementById("feecback");
+  let feedbackText = document.getElementById("feedback-text");
+  let correctAnswertext = document.getElementById("correct-answer");
+
+  feedbackDiv.style.display = "none";
+  feedbackText.textContent = "";
+  correctAnswerText.textContent = "";
 
   questionContainer.innerHTML = `
       <p>${questionObj.question}</p>
@@ -83,6 +90,17 @@ function loadQuestion() {
         .join("")} `;
   document.querySelectorAll(".option").forEach((option) => {
     option.addEventListener("click", function () {
+      let selectedOption = this.getAttribute("data-option");
+      if (selectedOption === questionObj.answer) {
+        score++;
+        feedbackText.textContent = "Amazing, thats correct!";
+        feedbackText.style.color = "green";
+      } else {
+        feedbackText.textContent = "Ayioo, it is incorrect!";
+        feedbackText.style.color = "red";
+        correctAnswertext.textContent = `The correct answer is : ${questionObj.answer}`;
+      }
+      feedbackDiv.style.display = "block";
       document.getElementById("next-question").style.display = "block";
     });
   });
@@ -97,4 +115,3 @@ document.getElementById("next-question").addEventListener("click", function () {
     alert("Quiz Completed!");
   }
 });
-//need to add the result function of the quiz at last
