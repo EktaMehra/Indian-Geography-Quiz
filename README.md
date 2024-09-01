@@ -11,21 +11,25 @@ This section provides an overview of the key features of the Indian Geography Qu
 - The Indian Geography Quiz Logo and Heading
 
 The Indian Geography Quiz logo and heading are prominently displayed at the top of the page, making it easy for users to identify the quiz and understand its focus. This enhances brand recognition and sets the tone for the quiz.
+
 ![Logo & Heading](assets/images/heading%20and%20logo.PNG)
 
 - The Quiz Interface
 
 The quiz interface is where users will interact with the quiz. The users start with entering their name and pressing the start quiz button. It then presents one multiple-choice question at a time, with four possible answers. Users can select an answer by clicking on it, which is then highlighted for confirmation. This clear and intuitive design allows users to focus on the quiz content.
+
 ![Enter name and start quiz section](assets/images/Enter%20name%20&%20start.PNG)
 
 - The Question Section
 
 The question section displays the current geography-related question, allowing users to engage with the content. An answer box is provided where users can submit their responses. Immediate feedback is given through a pop-up message indicating whether the answer was correct or incorrect.
+
 ![Question section](assets/images/question%20section.PNG)
 
 - End of Quiz Summary
 
 At the end of the quiz, users are provided with a summary of their total score. This summary allows users to review their knowledge and identify areas for improvement.
+
 ![Quiz ens and final score](assets/images/end%20section.PNG)
 
 ## Features Left to Implement
