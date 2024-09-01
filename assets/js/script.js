@@ -89,14 +89,14 @@ function loadQuestion() {
       let selectedOption = this.getAttribute("data-option");
       if (selectedOption === questionObj.answer) {
         score++;
-        feedbackText.textContent = "Correct!";
+        feedbackText.textContent = "Amazing this is correct!";
         feedbackText.style.color = "green";
       } else {
         feedbackText.textContent = "Incorrect!";
         feedbackText.style.color = "red";
-        correctAnswerText.textContent = `The correct answer was: ${questionObj.answer}`;
+        correctAnswerText.textContent = `The correct answer is: ${questionObj.answer}`;
       }
-      // Show feedback after selection
+      // Show feedback after selecting
       if (feedbackDiv) {
         feedbackDiv.style.display = "block";
       }
