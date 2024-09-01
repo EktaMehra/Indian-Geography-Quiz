@@ -67,7 +67,6 @@ function loadQuestion() {
   let feedbackText = document.getElementById("feedback-text");
   let correctAnswerText = document.getElementById("correct-answer");
 
-  // Ensure feedbackDiv exists before trying to modify its style
   if (feedbackDiv) {
     feedbackDiv.style.display = "none";
   }
@@ -96,7 +95,7 @@ function loadQuestion() {
         feedbackText.style.color = "red";
         correctAnswerText.textContent = `The correct answer is: ${questionObj.answer}`;
       }
-      // Show feedback after selecting
+
       if (feedbackDiv) {
         feedbackDiv.style.display = "block";
       }
