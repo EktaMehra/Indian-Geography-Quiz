@@ -5,17 +5,8 @@ document.getElementById("start-quiz").addEventListener("click", function () {
 });
 
 let currentQuestionIndex = 0;
+let score = 0;
 let questions = [
-  {
-    question: "1. What is the Capital of India?",
-    options: ["Delhi", "Mumbai", "Kolkata", "Chennai"],
-    answer: "Delhi",
-  },
-  {
-    question: "2. Which is the largest state in India by area?",
-    options: ["Maharashtra", "Madhya Pradesh", "Rajasthan", "Uttar Pradesh"],
-    answer: "Rajasthan",
-  },
   {
     question: "1. What is the Capital of India?",
     options: ["Delhi", "Mumbai", "Kolkata", "Chennai"],
@@ -75,10 +66,6 @@ function loadQuestion() {
   let feedbackDiv = document.getElementById("feecback");
   let feedbackText = document.getElementById("feedback-text");
   let correctAnswertext = document.getElementById("correct-answer");
-
-  feedbackDiv.style.display = "none";
-  feedbackText.textContent = "";
-  correctAnswerText.textContent = "";
 
   questionContainer.innerHTML = `
       <p>${questionObj.question}</p>
