@@ -11,6 +11,11 @@ body {
   background-position: center;
 }
 
+.logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
 #user-info {
   text-align: center;
   margin-bottom: 20px;
