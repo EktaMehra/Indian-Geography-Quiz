@@ -89,7 +89,7 @@ function loadQuestion() {
       let selectedOption = this.getAttribute("data-option");
       if (selectedOption === questionObj.answer) {
         score++;
-        feedbackText.textContent = "Amazing this is correct!";
+        feedbackText.textContent = "Amazing, this is correct!";
         feedbackText.style.color = "green";
       } else {
         feedbackText.textContent = "Incorrect!";
