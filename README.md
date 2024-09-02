@@ -52,10 +52,10 @@ Comprehensive testing has been conducted to ensure that all features of the Indi
 ## Validator Testing
 
 - HTML
-  No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea).
+  No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fektamehra.github.io%2FIndian-Geography-Quiz%2F).
 
 - CSS
-  No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator).
+  No errors were found when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fshowsource%3Dyes%26doc%3Dhttps%253A%252F%252Fektamehra.github.io%252FIndian-Geography-Quiz%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
 - JavaScript
   No errors were found when passing through the official [JSHint validator](https://jshint.com/).
@@ -66,6 +66,12 @@ Comprehensive testing has been conducted to ensure that all features of the Indi
   - Function with the largest signature take 2 arguments, while the median is 0.
   - Largest function has 11 statements in it, while the median is 4.
   - The most complex function has a cyclomatic complexity value of 3 while the median is 1.5.
+
+## Accessibility Performance
+
+Here is the accessibility performance result of our webpage:
+
+![Accessibility Performance](assets/images/performance.PNG)
 
 ## Unfixed Bugs
 
