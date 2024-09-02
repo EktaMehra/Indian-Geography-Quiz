@@ -1,10 +1,11 @@
+//Event listener to start quiz
 document.getElementById("start-quiz").addEventListener("click", function () {
   document.getElementById("user-info").style.display = "none";
   document.getElementById("quiz-content").style.display = "block";
   loadQuestion();
 });
 
-let currentQuestionIndex = 0;
+let currentQuestionIndex = 0; //Track the current question
 let score = 0; //To track the correct answers
 // List quiz questions, options, and correct answers
 let questions = [
@@ -87,6 +88,7 @@ function loadQuestion() {
       .join("")}
   `;
 
+  //add event listeners to the options
   document.querySelectorAll(".option").forEach((option) => {
     option.addEventListener("click", function () {
       let selectedOption = this.getAttribute("data-option");
@@ -119,6 +121,7 @@ function loadQuestion() {
   });
 }
 
+//event listener for next-question button
 document.getElementById("next-question").addEventListener("click", function () {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
@@ -129,6 +132,7 @@ document.getElementById("next-question").addEventListener("click", function () {
   }
 });
 
+//event listener for end-quiz button
 document.getElementById("end-quiz").addEventListener("click", function () {
   alert("Quiz Completed! Your score is " + score + "/" + questions.length);
 });
