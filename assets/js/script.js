@@ -5,7 +5,8 @@ document.getElementById("start-quiz").addEventListener("click", function () {
 });
 
 let currentQuestionIndex = 0;
-let score = 0;
+let score = 0; //To track the correct answers
+// List quiz questions, options, and correct answers
 let questions = [
   {
     question: "1. What is the Capital of India?",
@@ -60,6 +61,7 @@ let questions = [
   },
 ];
 
+//functions to load and display current questions
 function loadQuestion() {
   let questionObj = questions[currentQuestionIndex];
   let questionContainer = document.getElementById("question-container");
@@ -67,12 +69,14 @@ function loadQuestion() {
   let feedbackText = document.getElementById("feedback-text");
   let correctAnswerText = document.getElementById("correct-answer");
 
+  //To hide the feedback before the game starts
   if (feedbackDiv) {
     feedbackDiv.style.display = "none";
   }
   feedbackText.textContent = "";
   correctAnswerText.textContent = "";
 
+  //Display questions and the optiona
   questionContainer.innerHTML = `
     <p>${questionObj.question}</p>
     ${questionObj.options
@@ -104,6 +108,13 @@ function loadQuestion() {
       document.querySelectorAll(".option").forEach((option) => {
         option.disabled = true;
       });
+
+      //Show end quiz button if it is he last question
+      if (currentQuestionIndex === question.length - 1) {
+        document.getElementById("end-quiz").style.display = "block";
+        //hide next question button at the end of the quiz
+        document.getElementById("next-question").style.display = "none";
+      }
     });
   });
 }
@@ -114,6 +125,10 @@ document.getElementById("next-question").addEventListener("click", function () {
     loadQuestion();
     this.style.display = "none";
   } else {
-    alert("Quiz Completed! Your score is " + score + "/" + questions.length);
+    document.getElementById("end-quiz").style.display = "block";
   }
+});
+
+document.getElementById("end-quiz").addEventListener("click", function () {
+  alert("Quiz Completed! Your score is " + score + "/" + questions.length);
 });
