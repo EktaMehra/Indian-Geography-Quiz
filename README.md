@@ -93,4 +93,4 @@ The icons and images used in the quiz were sourced from [Font Awesome](https://f
 
 ### Acknowledgements
 
-Inspiration and guidance for the quiz interface were derived from various online tutorials and educational resources on JavaScript and web development.
+Inspiration and guidance for the quiz interface were derived from various [youtube](https://www.youtube.com/) tutorials and educational resources on JavaScript and web development.
