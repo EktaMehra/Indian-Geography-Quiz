@@ -2,6 +2,8 @@
 
 Indian Geography Quiz is an engaging and educational online quiz designed to test and enhance users' knowledge of the diverse geography of India. This project aims to provide an interactive platform where users can challenge themselves on various aspects of Indian geography, including states, capitals, rivers, mountains, and more. The quiz is ideal for students, trivia enthusiasts, and anyone interested in learning more about the geographical features of India. The Indian Geography Quiz is fully responsive and accessible across devices, ensuring a seamless experience for all users.
 
+![Responsive screens screenshot](assets/images/responsive%20screens.PNG)
+
 ## Features
 
 This section provides an overview of the key features of the Indian Geography Quiz, explaining how each feature contributes to the overall user experience and learning objectives.
