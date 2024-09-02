@@ -2,7 +2,7 @@
 
 Indian Geography Quiz is an engaging and educational online quiz designed to test and enhance users' knowledge of the diverse geography of India. This project aims to provide an interactive platform where users can challenge themselves on various aspects of Indian geography, including states, capitals, rivers, mountains, and more. The quiz is ideal for students, trivia enthusiasts, and anyone interested in learning more about the geographical features of India. The Indian Geography Quiz is fully responsive and accessible across devices, ensuring a seamless experience for all users.
 
-![Responsive screens screenshot](assets/images/responsive%20screens.PNG)
+![Responsive-screens_screenshot](assets/images/responsive%20screens.PNG)
 
 ## Features
 
@@ -14,25 +14,25 @@ This section provides an overview of the key features of the Indian Geography Qu
 
 The Indian Geography Quiz logo and heading are prominently displayed at the top of the page, making it easy for users to identify the quiz and understand its focus. This enhances brand recognition and sets the tone for the quiz.
 
-![Logo & Heading](assets/images/heading%20and%20logo.PNG)
+![Logo&Heading](assets/images/heading%20and%20logo.PNG)
 
 - The Quiz Interface
 
 The quiz interface is where users will interact with the quiz. The users start with entering their name and pressing the start quiz button. It then presents one multiple-choice question at a time, with four possible answers. Users can select an answer by clicking on it, which is then highlighted for confirmation. This clear and intuitive design allows users to focus on the quiz content.
 
-![Enter name and start quiz section](assets/images/Enter%20name%20&%20start.PNG)
+![Entername&start-quiz_section](assets/images/Enter%20name%20&%20start.PNG)
 
 - The Question Section
 
 The question section displays the current geography-related question, allowing users to engage with the content. An answer box is provided where users can submit their responses. Immediate feedback is given through a pop-up message indicating whether the answer was correct or incorrect.
 
-![Question section](assets/images/question%20section.PNG)
+![Question-section](assets/images/question%20section.PNG)
 
 - End of Quiz Summary
 
 At the end of the quiz, users are provided with a summary of their total score. This summary allows users to review their knowledge and identify areas for improvement.
 
-![Quiz ens and final score](assets/images/end%20section.PNG)
+![Quizend&final_score](assets/images/end%20section.PNG)
 
 ## Features Left to Implement
 
@@ -71,7 +71,7 @@ Comprehensive testing has been conducted to ensure that all features of the Indi
 
 Here is the accessibility performance result of our webpage:
 
-![Accessibility Performance](assets/images/performance.PNG)
+![Performance_report](assets/images/performance.PNG)
 
 ## Unfixed Bugs
 

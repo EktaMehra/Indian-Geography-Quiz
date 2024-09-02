@@ -78,7 +78,7 @@ function loadQuestion() {
     ${questionObj.options
       .map(
         (option, index) =>
-          `<div class="option" data-option="${option}">${option}</div>`
+          `<button class="option" data-option="${option}">${option}</button>`
       )
       .join("")}
   `;
@@ -100,6 +100,10 @@ function loadQuestion() {
         feedbackDiv.style.display = "block";
       }
       document.getElementById("next-question").style.display = "block";
+
+      document.querySelectorAll(".option").forEach((option) => {
+        option.disabled = true;
+      });
     });
   });
 }
