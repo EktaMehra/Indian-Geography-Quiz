@@ -9,7 +9,9 @@ body {
   justify-content: center;
   align-items: center; /* Added for better centering on smaller screens */
   margin: 0;
-  padding: 0px;
+  padding: 0;
+  height: 100vh; /*To ensure full height without scrolling*/
+  overflow: hidden; /*Also to prevent scrolling(testing what works best)*/
   background-image: url("../images/pexels-mayur-rawte-1583244.jpg");
   background-size: cover;
   background-position: center;
@@ -55,6 +57,8 @@ body {
   width: 100%; /* Adjusted width to be more responsive */
   max-width: 400px;
   text-align: center;
+  overflow: auto; /*will allow internal scrolling if content overflows on smaller screens*/
+  max-height: 90vh; /*will prevent the quiz from exceeding the viewport height*/
 }
 
 #question-container {
