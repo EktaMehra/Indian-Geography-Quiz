@@ -117,6 +117,10 @@ body {
     width: 100%; /* Make the button full-width on smaller screens */
     margin: 20px 0 0; /* Centered margin for smaller screens */
   }
+
+  #end-quiz {
+    width: 100%; /* Make the button full-width on smaller screens */
+  }
 }
 
 body {
