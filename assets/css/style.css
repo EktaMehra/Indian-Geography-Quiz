@@ -85,10 +85,15 @@ body {
   margin-top: 20px; /* Adjusted margin to be more responsive */
 }
 
+/*end-quiz button to only appear at the end of the quiz*/
 #end-quiz {
   width: 100%;
   border: none;
   font-size: 1rem;
+}
+
+#end-quiz:hover {
+  background-color: #c82333;
 }
 
 /* Media query: tablets and smaller(768px and below)*/
