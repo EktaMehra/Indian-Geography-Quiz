@@ -18,19 +18,19 @@ The Indian Geography Quiz logo and heading are prominently displayed at the top 
 
 - The Quiz Interface
 
-The quiz interface is where users will interact with the quiz. The users start with entering their name and pressing the start quiz button. It then presents one multiple-choice question at a time, with four possible answers. Users can select an answer by clicking on it, which is then highlighted for confirmation. This clear and intuitive design allows users to focus on the quiz content.
+The quiz interface is where users will interact with the quiz. The users start with entering their name and pressing the start quiz button.
 
 ![Entername&start-quiz_section](assets/images/Enter%20name%20&%20start.PNG)
 
 - The Question Section
 
-The question section displays the current geography-related question, allowing users to engage with the content. An answer box is provided where users can submit their responses. Immediate feedback is given through a pop-up message indicating whether the answer was correct or incorrect.
+One the quiz starts, it then presents one multiple-choice question at a time, with four possible answers. Users can select an answer by clicking on it, which is then highlighted for confirmation. This clear and intuitive design allows users to focus on the quiz content.The question section displays the current geography-related question, allowing users to engage with the content. An answer box is provided where users can submit their responses. Immediate feedback is given through a pop-up message indicating whether the answer was correct or incorrect. This allow users to review their knowledge and identify areas for improvement.
 
 ![Question-section](assets/images/question%20section.PNG)
 
 - End of Quiz Summary
 
-At the end of the quiz, users are provided with a summary of their total score. This summary allows users to review their knowledge and identify areas for improvement.
+At the end of the quiz, after the user select the answer to the last question an end quiz button pops up to convey that this is the end of the quiz. At the same time they are provided with a summary of their total score.
 
 ![Quizend&final_score](assets/images/end%20section.PNG)
 
@@ -39,7 +39,7 @@ At the end of the quiz, users are provided with a summary of their total score. 
 ### Leaderboard
 
 - A leaderboard feature will be added to allow users to compare their scores with others, fostering a sense of competition and community. This feature will enhance user engagement and motivate repeat plays.
-- A more detailed code that will prevent repetion of answering the questions, in case one is answered incorrectly.
+- A feature that will shuffle the questions automatically when the users restart the quiz.
 
 ### Timed Quiz Mode
 
@@ -47,7 +47,7 @@ A timed quiz mode will be implemented to increase the challenge by limiting the 
 
 ## Testing
 
-Comprehensive testing has been conducted to ensure that all features of the Indian Geography Quiz work as intended and provide a smooth and intuitive user experience. The quiz has been tested across various browsers and screen sizes to guarantee compatibility and responsiveness.
+Comprehensive testing has been conducted to ensure that all features and buttons of the Indian Geography Quiz work as intended and provide a smooth and intuitive user experience. The quiz has been tested across various browsers and screen sizes to guarantee compatibility and responsiveness.
 
 ## Validator Testing
 
@@ -74,6 +74,8 @@ Here is the accessibility performance result of our webpage:
 ![Performance_report](assets/images/performance.PNG)
 
 ## Unfixed Bugs
+
+There was a function issue that would let users to reselect another answer if the first one they picked was wrong and then would calculate the wrong score. This bug was fixed by adding a function that doesn't let users reselect an answer after their first attempt.
 
 Currently, there are no known unfixed bugs. All reported issues have been addressed to ensure optimal functionality and user experience. Any potential improvements or enhancements will be considered in future updates.
 
