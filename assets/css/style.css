@@ -85,6 +85,12 @@ body {
   margin-top: 20px; /* Adjusted margin to be more responsive */
 }
 
+#end-quiz {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+}
+
 /* Media query: tablets and smaller(768px and below)*/
 @media (max-width: 768px) {
   body {
