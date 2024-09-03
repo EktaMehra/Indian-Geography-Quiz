@@ -87,13 +87,15 @@ body {
   background-color: #28a745;
   color: #fff;
   margin-top: 20px; /* Adjusted margin to be more responsive */
+  width: 100%; /*will ensure the buttons are full size on smaller screen*/
 }
 
 /*end-quiz button to only appear at the end of the quiz*/
 #end-quiz {
-  width: 100%;
+  width: 100%; /*will ensure the buttons are full size on smaller screen*/
   border: none;
   font-size: 1rem;
+  margin-top: 20px; /*Adjusted margins to be more responsive*/
 }
 
 #end-quiz:hover {
