@@ -30,7 +30,7 @@ One the quiz starts, it then presents one multiple-choice question at a time, wi
 
 - End of Quiz Summary
 
-At the end of the quiz, after the user select the answer to the last question an end quiz button pops up in place of the 'next question' button to convey that this is the end of the quiz. At the same time they are provided with a summary of their total score.
+At the end of the quiz, after the user select the answer to the last question an end quiz button pops up in place of the 'next question' button to convey that this is the end of the quiz. At the same time they are provided with a summary of their total score. Once the quiz is completed and the score pops up, users can click on the 'okay' button to restart the quiz and get the perfect score.
 
 ![Quizend&final_score](assets/images/end%20section.PNG)
 
@@ -62,10 +62,10 @@ Comprehensive testing has been conducted to ensure that all features and buttons
 
   The following metrics were returned:
 
-  - There are 6 functions in this file.
+  - There are 8 functions in this file.
   - Function with the largest signature take 2 arguments, while the median is 0.
-  - Largest function has 11 statements in it, while the median is 4.
-  - The most complex function has a cyclomatic complexity value of 3 while the median is 1.5.
+  - Largest function has 15 statements in it, while the median is 2.5.
+  - The most complex function has a cyclomatic complexity value of 4 while the median is 1.5.
 
 ## Accessibility Performance
 
