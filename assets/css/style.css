@@ -105,83 +105,64 @@ body {
 
 /* Media query: tablets and smaller(768px and below)*/
 @media (max-width: 768px) {
-  #quiz-container {
-    width: 90%; /* Adjusted width for smaller screens */
-    padding: 15px;
-  }
-
-  #next-question {
-    width: 100%; /* Make the button full-width on smaller screens */
-    margin: 20px 0 0; /* Centered margin for smaller screens */
-  }
-
   #end-quiz {
     width: 100%; /* Make the button full-width on smaller screens */
   }
-}
 
-.logo {
-  height: 30px;
-  margin-right: 10px;
-}
+  .logo {
+    height: 30px;
+    margin-right: 10px;
+  }
 
-#user-info {
-  text-align: center;
-  margin-bottom: 20px;
-}
+  #user-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-#username {
-  padding: 10px;
-  width: 100%; /* Adjusted width to be more responsive */
-  max-width: 300px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
+  #username {
+    padding: 10px;
+    width: 100%; /* Adjusted width to be more responsive */
+    max-width: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
 
-#start-quiz {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-}
+  #start-quiz {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
 
-#quiz-content {
-  display: none;
-}
+  #quiz-content {
+    display: none;
+  }
 
-#quiz-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Adjusted width to be more responsive */
-  max-width: 400px;
-  text-align: center;
-}
-
-#question-container {
-  margin: 20px 0;
-}
-
-#next-question {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #28a745;
-  color: #fff;
-  margin-top: 20px; /* Adjusted margin to be more responsive */
-}
-
-@media (max-width: 768px) {
   #quiz-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjusted width to be more responsive */
+    max-width: 400px;
+    text-align: center;
     width: 90%; /* Adjusted width for smaller screens */
     padding: 15px;
   }
 
+  #question-container {
+    margin: 20px 0;
+  }
+
   #next-question {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    margin-top: 20px; /* Adjusted margin to be more responsive */
     width: 100%; /* Make the button full-width on smaller screens */
     margin: 20px 0 0; /* Centered margin for smaller screens */
   }

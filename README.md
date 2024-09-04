@@ -30,7 +30,7 @@ Once the quiz starts, it then presents one multiple-choice question at a time, w
 
 - End of Quiz Summary
 
-At the end of the quiz, after the user selects the answer to the last question an end quiz button pops up in place of the 'next question' button to convey that this is the end of the quiz. At the same time, they are provided with a summary of their total score. Once the quiz is completed and the score pops up, users can click the 'okay' button to restart the quiz and get the perfect score on their next attempt.
+At the end of the quiz, after the user selects the answer to the last question an 'end quiz' button pops up in place of the 'next question' button to convey that this is the end of the quiz. At the same time, they are provided with a summary of their total score. Once the quiz is completed and the score pops up, users can click the 'okay' button to restart the quiz and get the perfect score on their next attempt.
 
 ![Quizend&final_score](assets/images/end%20section.PNG)
 
