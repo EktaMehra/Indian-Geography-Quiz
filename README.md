@@ -30,7 +30,7 @@ One the quiz starts, it then presents one multiple-choice question at a time, wi
 
 - End of Quiz Summary
 
-At the end of the quiz, after the user select the answer to the last question an end quiz button pops up in place of the 'next question' button to convey that this is the end of the quiz. At the same time they are provided with a summary of their total score. Once the quiz is completed and the score pops up, users can click on the 'okay' button to restart the quiz and get the perfect score.
+At the end of the quiz, after the user select the answer to the last question an end quiz button pops up in place of the 'next question' button to convey that this is the end of the quiz. At the same time they are provided with a summary of their total score. Once the quiz is completed and the score pops up, users can click on the 'okay' button to restart the quiz and get the perfect score in their next attempt.
 
 ![Quizend&final_score](assets/images/end%20section.PNG)
 
@@ -75,8 +75,8 @@ Here is the accessibility performance result of our webpage:
 
 ## Unfixed Bugs
 
-1. There was a function issue that would let users to reselect another answer if the first one they picked was wrong and then would calculate the wrong score. This bug was fixed by adding a function that doesn't let users reselect an answer after their first attempt.
-2. When the quiz ended, the 'next question' button still popped up along with the 'end quiz' button which can be confusing for the users. This bug was fixed by correctling a spelling mistake in one of the javascript code.
+- There was a function issue that would let users to reselect another answer if the first one they picked was wrong and then would calculate the wrong score. This bug was fixed by adding a function that doesn't let users reselect an answer after their first attempt.
+- When the quiz ended, the 'next question' button still popped up along with the 'end quiz' button which can be confusing for the users. This bug was fixed by correctling a spelling mistake in one of the javascript code.
 
 Currently, there are no known unfixed bugs. All reported issues have been addressed to ensure optimal functionality and user experience. Any potential improvements or enhancements will be considered in future updates.
 
