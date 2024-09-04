@@ -112,7 +112,7 @@ function loadQuestion() {
       });
 
       //Show end quiz button if it is he last question
-      if (currentQuestionIndex === question.length - 1) {
+      if (currentQuestionIndex === questions.length - 1) {
         document.getElementById("end-quiz").style.display = "block";
         //hide next question button at the end of the quiz
         document.getElementById("next-question").style.display = "none";
@@ -134,5 +134,15 @@ document.getElementById("next-question").addEventListener("click", function () {
 
 //event listener for end-quiz button
 document.getElementById("end-quiz").addEventListener("click", function () {
-  alert("Quiz Completed! Your score is " + score + "/" + questions.length);
+  if (
+    confirm(
+      "Quiz Completed! Your score is " +
+        score +
+        "/" +
+        questions.length +
+        "! Play again?"
+    )
+  ) {
+    reload();
+  }
 });
