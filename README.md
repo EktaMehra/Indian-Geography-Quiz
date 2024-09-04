@@ -30,7 +30,7 @@ One the quiz starts, it then presents one multiple-choice question at a time, wi
 
 - End of Quiz Summary
 
-At the end of the quiz, after the user select the answer to the last question an end quiz button pops up to convey that this is the end of the quiz. At the same time they are provided with a summary of their total score.
+At the end of the quiz, after the user select the answer to the last question an end quiz button pops up in place of the 'next question' button to convey that this is the end of the quiz. At the same time they are provided with a summary of their total score.
 
 ![Quizend&final_score](assets/images/end%20section.PNG)
 
