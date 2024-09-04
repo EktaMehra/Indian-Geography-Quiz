@@ -143,6 +143,6 @@ document.getElementById("end-quiz").addEventListener("click", function () {
         "! Play again?"
     )
   ) {
-    reload();
+    location.reload();
   }
 });
