@@ -123,19 +123,6 @@ body {
   }
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Added for better centering on smaller screens */
-  margin: 0;
-  padding: 0px;
-  background-image: url("../images/pexels-mayur-rawte-1583244.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
 .logo {
   height: 30px;
   margin-right: 10px;
