@@ -18,19 +18,19 @@ The Indian Geography Quiz logo and heading are prominently displayed at the top 
 
 - The Quiz Interface
 
-The quiz interface is where users will interact with the quiz. The users start with entering their name and pressing the start quiz button.
+The quiz interface is where users will interact with the quiz. The users start by entering their name and pressing the start quiz button.
 
 ![Entername&start-quiz_section](assets/images/Enter%20name%20&%20start.PNG)
 
 - The Question Section
 
-One the quiz starts, it then presents one multiple-choice question at a time, with four possible answers. Users can select an answer by clicking on it, which is then highlighted for confirmation. This clear and intuitive design allows users to focus on the quiz content.The question section displays the current geography-related question, allowing users to engage with the content. An answer box is provided where users can submit their responses. Immediate feedback is given through a pop-up message indicating whether the answer was correct or incorrect. This allow users to review their knowledge and identify areas for improvement.
+Once the quiz starts, it then presents one multiple-choice question at a time, with four possible answers. Users can select an answer by clicking on it, which is then highlighted for confirmation. This clear and intuitive design allows users to focus on the quiz content. The question section displays the current geography-related question, allowing users to engage with the content. An answer box is provided where users can submit their responses. Immediate feedback is given through a pop-up message indicating whether the answer is correct or incorrect. This allows users to review their knowledge and identify areas for improvement.
 
 ![Question-section](assets/images/question%20section.PNG)
 
 - End of Quiz Summary
 
-At the end of the quiz, after the user select the answer to the last question an end quiz button pops up in place of the 'next question' button to convey that this is the end of the quiz. At the same time they are provided with a summary of their total score. Once the quiz is completed and the score pops up, users can click on the 'okay' button to restart the quiz and get the perfect score in their next attempt.
+At the end of the quiz, after the user selects the answer to the last question an end quiz button pops up in place of the 'next question' button to convey that this is the end of the quiz. At the same time, they are provided with a summary of their total score. Once the quiz is completed and the score pops up, users can click the 'okay' button to restart the quiz and get the perfect score on their next attempt.
 
 ![Quizend&final_score](assets/images/end%20section.PNG)
 
@@ -63,8 +63,8 @@ Comprehensive testing has been conducted to ensure that all features and buttons
   The following metrics were returned:
 
   - There are 8 functions in this file.
-  - Function with the largest signature take 2 arguments, while the median is 0.
-  - Largest function has 15 statements in it, while the median is 2.5.
+  - Function with the largest signature takes 2 arguments, while the median is 0.
+    The largest function has 15 statements in it, while the median is 2.5.
   - The most complex function has a cyclomatic complexity value of 4 while the median is 1.5.
 
 ## Accessibility Performance
@@ -75,8 +75,8 @@ Here is the accessibility performance result of our webpage:
 
 ## Unfixed Bugs
 
-- There was a function issue that would let users to reselect another answer if the first one they picked was wrong and then would calculate the wrong score. This bug was fixed by adding a function that doesn't let users reselect an answer after their first attempt.
-- When the quiz ended, the 'next question' button continued to come up along with the 'end quiz' button which can be confusing for the users. This bug was fixed by correcting a spelling mistake in one of the javascript code.
+- There was a function issue that would let users select another answer if the first one they picked was wrong and then would calculate the wrong score. This bug was fixed by adding a function that doesn't let users select an answer after their first attempt.
+- When the quiz ended, the 'next question' button continued to come up along with the 'end quiz' button which can be confusing for the users. This bug was fixed by correcting a spelling mistake in one of the javascript codes.
 
 Currently, there are no known unfixed bugs. All reported issues have been addressed to ensure optimal functionality and user experience. Any potential improvements or enhancements will be considered in future updates.
 
@@ -102,4 +102,4 @@ The icons and images used in the quiz were sourced from [Font Awesome](https://f
 
 ### Acknowledgements
 
-Inspiration and guidance for the quiz interface were derived from various [youtube](https://www.youtube.com/) tutorials and educational resources on JavaScript and web development.
+Inspiration and guidance for the quiz interface were derived from various [YouTube](https://www.youtube.com/) tutorials and educational resources on JavaScript and web development.
