@@ -23,7 +23,7 @@ let questions = [
     question:
       "3. The tropic of Cancer passes through how many states in India? ",
     options: ["5", "6", "7", "8"],
-    answer: "6",
+    answer: "8",
   },
   {
     question: "4. Which river is also known as the 'Sorrow of Bengal'?",
