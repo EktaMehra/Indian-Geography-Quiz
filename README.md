@@ -75,7 +75,8 @@ Here is the accessibility performance result of our webpage:
 
 ## Unfixed Bugs
 
-There was a function issue that would let users to reselect another answer if the first one they picked was wrong and then would calculate the wrong score. This bug was fixed by adding a function that doesn't let users reselect an answer after their first attempt.
+1. There was a function issue that would let users to reselect another answer if the first one they picked was wrong and then would calculate the wrong score. This bug was fixed by adding a function that doesn't let users reselect an answer after their first attempt.
+2. When the quiz ended, the 'next question' button still popped up along with the 'end quiz' button which can be confusing for the users. This bug was fixed by correctling a spelling mistake in one of the javascript code.
 
 Currently, there are no known unfixed bugs. All reported issues have been addressed to ensure optimal functionality and user experience. Any potential improvements or enhancements will be considered in future updates.
 
