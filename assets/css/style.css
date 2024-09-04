@@ -105,10 +105,6 @@ body {
 
 /* Media query: tablets and smaller(768px and below)*/
 @media (max-width: 768px) {
-  body {
-    padding: 0px;
-  }
-
   #quiz-container {
     width: 90%; /* Adjusted width for smaller screens */
     padding: 15px;
@@ -180,10 +176,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 0px;
-  }
-
   #quiz-container {
     width: 90%; /* Adjusted width for smaller screens */
     padding: 15px;
@@ -196,10 +188,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 0px;
-  }
-
   #username {
     width: 100%; /* Full width for input on smaller screens */
   }
